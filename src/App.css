@@ -1,38 +1,42 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Chosunilbo_myungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+*{
+  font-family: 'Chosunilbo_myungjo';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+h1{
+  font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+.article-container{
+  
+  background-color: lavender;
+  padding: 3%;
+  border-radius: 30px;
+  margin: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a{
+  color: black;
+  text-decoration: none;
 }
+a:hover{
+  color: darkblue;
+}
+/*
+Link 태그로 작업을 했는데, a태그로 디자인했을 때 적용되는 이유?
+- 우리가 div, p, h3 여러개를 하나의 NewsItem 컴포넌트에 담아준 것처럼,
+  a태그를 비롯한 여러 기능들을 Link컴포넌트에 담아준거임
+- 그래서 우리는 css 적용이 가능하다~
+*/
+
